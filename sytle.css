@@ -75,6 +75,8 @@ padding: 0;
     border-bottom: solid black 1px;
     padding-left: 10px;
     justify-content: space-around;
+    flex-basis: 70%;
+    flex-wrap: wrap;
     
     
 }
@@ -86,9 +88,13 @@ padding: 0;
     margin-bottom: 5px;
     margin-top:5px ;
     gap: -10px;
+    border:solid black 2px;
+    cursor: pointer;
 }
 .catgories p:hover{
-    border:solid rgb(81, 35, 206) 2px;
+    border:solid black 2px;
+    background-color: transparent;
+    color: blueviolet;
 }
 .sale_image img{
     width: 100%;
@@ -106,6 +112,21 @@ padding: 0;
     top:190px;
     left:30px;
     background-color: whitesmoke;
+    animation-name: salecard;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes salecard {
+    0%{
+        transform: scale(0);
+opacity: 0;
+    }
+    100%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
 }
 .recom__title{
     padding: 20px;
