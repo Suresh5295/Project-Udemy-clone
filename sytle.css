@@ -95,6 +95,7 @@ padding: 0;
     border:solid black 2px;
     background-color: transparent;
     color: blueviolet;
+    transition: 1s;
 }
 .sale_image img{
     width: 100%;
