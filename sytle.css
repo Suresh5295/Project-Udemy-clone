@@ -51,6 +51,10 @@ padding: 0;
     position:relative;
     cursor: pointer;
 }
+.navbar-s4{
+    display: none;
+    margin-right: 20px;
+}
 .learning__popup{
     position: absolute;
     top:40px;
@@ -75,8 +79,6 @@ padding: 0;
     border-bottom: solid black 1px;
     padding-left: 10px;
     justify-content: space-around;
-    flex-basis: 70%;
-    flex-wrap: wrap;
     
     
 }
@@ -131,7 +133,7 @@ opacity: 0;
 }
 .recom__title{
     padding: 20px;
-    margin-top: -50px;
+    margin-top: -20px;
    }
    
     .recom__course img
@@ -140,11 +142,15 @@ opacity: 0;
        height: 200px;
        
        
+       
     }
     .recom__container{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 10px;
+    flex-basis: 10%;
+       
         
     }
     .recom__course{
@@ -206,4 +212,21 @@ opacity: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+/* media query */
+@media screen and (max-width:600px){
+
+    body{
+        font-size: 10px;
+    }
+    .catgories{
+        display: none;
+    }
+    .navbar-s2 ,.navbar-s3{
+        display: none;
+    }
+    .navbar-s4{
+        display: block;
+    }
+
 }
